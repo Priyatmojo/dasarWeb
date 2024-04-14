@@ -9,8 +9,7 @@
 
     if ($aksi == 'tambah') {
 
-        $query = "INSERT INTO anggota (nama, jenis_kelamin, alamat, no_telp) VALUE ('$nama', '$jenis_kelamin',
-        '$alamat', '$no_telp')";
+        $query = "INSERT INTO anggota (nama, jenis_kelamin, alamat, no_telp) VALUE ('$nama', '$jenis_kelamin', '$alamat', '$no_telp')";
 
         if (mysqli_query($koneksi, $query)) {
             header("Location: index.php");
@@ -51,6 +50,6 @@
     } else {
         header("Location: index.php");
     }
-    
+
     mysqli_close($koneksi);
 ?>
